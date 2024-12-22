@@ -1,0 +1,111 @@
+/* TodoApp Container */
+.todo-app {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.add-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+  transition: transform 0.2s;
+  box-shadow: 0.2s;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.task-item:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0.2s;
+}
+
+/* Task Text */
+.task-text {
+  flex: 1;
+  text-align: left;
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Task Buttons */
+.task-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.complete-button {
+  font-size: 16px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #2196f3;
+  transition: color 0.3s;
+}
+
+.complete-button:hover {
+  color: #0b7dda;
+}
+
+.delete-icon {
+  font-size: 20px;
+  color: red;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.delete-icon:hover {
+  color: #b30000;
+}
